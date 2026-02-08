@@ -18,7 +18,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Real-time insights (WebSocket)
 
-For live transcription, charts, and AI insights in the presenter view, use **`npm run dev`** (custom server with WebSocket). Do not use `npm run dev:next` for that flow—it runs Next.js without the WebSocket server, so insights will not appear.
+For live transcription, charts, and AI insights in the presenter view, use **`npm run dev`** (custom server with WebSocket). Do not use `npm run dev:next` or `next dev` alone—those do not start the WebSocket server, so the client cannot connect and you may see `[WS] Connection error` in the console.
+
+When the custom server starts correctly you should see:
+
+```text
+> Ready on http://localhost:3000
+> WebSocket server initialized on ws://localhost:3000/ws
+```
+
+- **Same origin:** If you open the app at `http://localhost:3000`, no extra config is needed; the client connects to `ws://localhost:3000/ws` automatically.
+- **Different origin:** If the frontend runs on a different host/port than the server, set `NEXT_PUBLIC_WS_URL` in `.env.local` (e.g. `NEXT_PUBLIC_WS_URL=ws://localhost:3000`). Use `wss://` in production if the site is served over HTTPS.
+- **Verify:** Open a presenter page (e.g. `/session/<id>/presenter`); the connection status in the UI and `[WS] Connected` in the console indicate a successful connection.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
