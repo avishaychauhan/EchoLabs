@@ -12,78 +12,146 @@ interface CanvasProps {
 
 export function Canvas({ className = '' }: CanvasProps) {
     const { state } = useAuraStore();
-    const { currentCard } = useVisualizationStore();
+    const { currentCard, charts, currentChartIndex } = useVisualizationStore();
 
-    const isShowingVisualization = state === 'visualizing' && currentCard;
+    // Show chart if we have one from WebSocket OR from queue
+    const activeChart = charts[currentChartIndex];
+    const hasVisualization = currentCard || activeChart;
+    const isShowingVisualization = (state === 'visualizing' && hasVisualization) || activeChart;
 
     return (
         <div className={`relative w-full h-full flex items-center justify-center overflow-hidden ${className}`}>
-            {/* Ambient background glow */}
+            {/* Ambient background glow - always visible */}
             <div
-                className="absolute inset-0 pointer-events-none"
+                className="absolute inset-0 pointer-events-none transition-all duration-700"
                 style={{
-                    background: `radial-gradient(ellipse at center, 
-            rgba(59, 130, 246, 0.08) 0%, 
-            rgba(139, 92, 246, 0.04) 30%, 
-            transparent 60%)`,
+                    background: isShowingVisualization
+                        ? `radial-gradient(ellipse at center, 
+                            rgba(139, 92, 246, 0.15) 0%, 
+                            rgba(59, 130, 246, 0.08) 30%, 
+                            transparent 60%)`
+                        : `radial-gradient(ellipse at center, 
+                            rgba(59, 130, 246, 0.08) 0%, 
+                            rgba(139, 92, 246, 0.04) 30%, 
+                            transparent 60%)`,
                 }}
             />
 
-            {/* Aura Layer */}
-            <AnimatePresence mode="wait">
-                {!isShowingVisualization && (
+            {/* Aura Layer - persists but shrinks/pulses when chart appears */}
+            <motion.div
+                key="aura-persistent"
+                initial={{ opacity: 1, scale: 1 }}
+                animate={{
+                    opacity: isShowingVisualization ? 0.3 : 1,
+                    scale: isShowingVisualization ? 0.4 : 1,
+                    filter: isShowingVisualization ? 'blur(8px)' : 'blur(0px)'
+                }}
+                transition={{
+                    duration: 0.6,
+                    ease: [0.16, 1, 0.3, 1]
+                }}
+                className="absolute inset-0 flex items-center justify-center pointer-events-none"
+            >
+                <AuraCanvas width={500} height={500} interactive={false} />
+            </motion.div>
+
+            {/* Organic morph ring - appears during transition */}
+            <AnimatePresence>
+                {isShowingVisualization && (
                     <motion.div
-                        key="aura"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.5 }}
-                        transition={{ duration: 0.5 }}
-                        className="absolute inset-0 flex items-center justify-center"
-                    >
-                        <AuraCanvas width={500} height={500} interactive={false} />
-                    </motion.div>
+                        key="morph-ring"
+                        initial={{ scale: 0.3, opacity: 0 }}
+                        animate={{ scale: 1.5, opacity: [0, 0.6, 0] }}
+                        exit={{ scale: 2, opacity: 0 }}
+                        transition={{ duration: 0.8, ease: 'easeOut' }}
+                        className="absolute pointer-events-none"
+                        style={{
+                            width: 300,
+                            height: 300,
+                            borderRadius: '50%',
+                            background: `radial-gradient(circle, 
+                                transparent 40%, 
+                                rgba(59, 130, 246, 0.3) 60%, 
+                                rgba(139, 92, 246, 0.5) 80%, 
+                                transparent 100%)`,
+                        }}
+                    />
                 )}
             </AnimatePresence>
 
-            {/* Visualization Layer */}
+            {/* Visualization Layer - blooms instantly from center */}
             <AnimatePresence mode="wait">
-                {isShowingVisualization && currentCard && (
+                {isShowingVisualization && (
                     <motion.div
-                        key="visualization"
-                        initial={{ opacity: 0, scale: 0.3 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.3 }}
-                        transition={{
-                            duration: 0.8,
-                            ease: [0.16, 1, 0.3, 1] // Custom spring-like easing
+                        key={activeChart ? `chart-${currentChartIndex}` : 'visualization'}
+                        initial={{
+                            opacity: 0,
+                            scale: 0.2,
+                            y: 0,
                         }}
-                        className="absolute inset-0 flex items-center justify-center p-8"
+                        animate={{
+                            opacity: 1,
+                            scale: 1,
+                            y: 0,
+                        }}
+                        exit={{
+                            opacity: 0,
+                            scale: 0.5,
+                            y: 20,
+                        }}
+                        transition={{
+                            duration: 0.5,
+                            ease: [0.16, 1, 0.3, 1], // Organic spring-like easing
+                            opacity: { duration: 0.3 },
+                        }}
+                        className="absolute inset-0 flex items-center justify-center p-8 z-10"
                     >
-                        {/* Aura halo behind visualization */}
+                        {/* Subtle glow behind chart */}
                         <div
-                            className="absolute inset-0 pointer-events-none"
+                            className="absolute pointer-events-none"
                             style={{
+                                width: '100%',
+                                height: '100%',
                                 background: `radial-gradient(ellipse at center, 
-                  rgba(59, 130, 246, 0.15) 0%, 
-                  rgba(139, 92, 246, 0.08) 40%, 
-                  transparent 70%)`,
-                                animation: 'pulse-glow 4s ease-in-out infinite',
+                                    rgba(59, 130, 246, 0.12) 0%, 
+                                    rgba(139, 92, 246, 0.06) 40%, 
+                                    transparent 70%)`,
+                                animation: 'pulse-glow 3s ease-in-out infinite',
                             }}
                         />
 
-                        {/* Visualization content */}
+                        {/* Chart content */}
                         <div className="relative z-10 w-full max-w-4xl">
-                            <VisualizationRenderer card={currentCard} />
+                            {activeChart ? (
+                                <VisualizationRenderer
+                                    card={{
+                                        id: `ws-chart-${currentChartIndex}`,
+                                        type: 'bar_chart',
+                                        headline: activeChart.title,
+                                        data: {
+                                            mermaidCode: activeChart.mermaidCode,
+                                            chartType: activeChart.chartType,
+                                            narration: activeChart.narration,
+                                            sourceExcerpt: activeChart.sourceExcerpt,
+                                        },
+                                        sourceFile: 'live-transcription',
+                                        chartConfig: {},
+                                        morphHint: 'expand_bars',
+                                    }}
+                                />
+                            ) : currentCard ? (
+                                <VisualizationRenderer card={currentCard} />
+                            ) : null}
                         </div>
                     </motion.div>
                 )}
             </AnimatePresence>
 
             {/* State indicator */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
                 <div className="glass px-4 py-2 rounded-full flex items-center gap-2">
                     <span
-                        className={`w-2 h-2 rounded-full ${state === 'idle' ? 'bg-gray-400' :
+                        className={`w-2 h-2 rounded-full transition-colors duration-300 ${state === 'idle' ? 'bg-gray-400' :
                                 state === 'listening' ? 'bg-green-400 animate-pulse' :
                                     state === 'morphing' ? 'bg-blue-400 animate-pulse' :
                                         state === 'visualizing' ? 'bg-purple-400' :
@@ -91,10 +159,11 @@ export function Canvas({ className = '' }: CanvasProps) {
                             }`}
                     />
                     <span className="text-xs text-[var(--foreground-muted)] capitalize">
-                        {state}
+                        {isShowingVisualization && activeChart ? 'insight' : state}
                     </span>
                 </div>
             </div>
         </div>
     );
 }
+

@@ -1,0 +1,241 @@
+{
+  "emails": [
+    {
+      "id": "email_1",
+      "keywords": [
+        "regulatory",
+        "antitrust",
+        "omnicorp",
+        "risk",
+        "eu",
+        "evelyn",
+        "break fee"
+      ],
+      "from": "Evelyn St. James",
+      "subject": "URGENT: Regulatory Headwinds — OmniCorp Deal",
+      "date": "Yesterday",
+      "preview": "Alex, legal just flagged a potential antitrust inquiry in Brussels regarding the OmniCorp deal. We need to factor a 5% break fee into the model to cover our downside risk...",
+      "avatarColor": "#ef4444"
+    },
+    {
+      "id": "email_2",
+      "keywords": [
+        "retention",
+        "churn",
+        "ndr",
+        "multiple",
+        "valuation",
+        "rajiv"
+      ],
+      "from": "Rajiv Mehta",
+      "subject": "Validation of OmniCorp Cohort Data",
+      "date": "Today",
+      "preview": "My team finished the deep dive on OmniCorp's churn metrics. Net Dollar Retention is actually 118%, not 115% as reported in the CIM. The 12x ARR multiple is defensible given this stickiness...",
+      "avatarColor": "#10b981"
+    },
+    {
+      "id": "email_3",
+      "keywords": [
+        "pension",
+        "risk",
+        "exposure",
+        "semiconductor",
+        "lp",
+        "julian"
+      ],
+      "from": "Julian Thorne",
+      "subject": "LP Concern — Tech Exposure (Teacher's Fund)",
+      "date": "Oct 15, 2025",
+      "preview": "The Teacher's Pension Fund is asking about our exposure to semiconductor volatility given the recent geopolitics. Can we prepare a one-pager on our hedging strategy before the quarterly call?...",
+      "avatarColor": "#e5a000"
+    },
+    {
+      "id": "email_4",
+      "keywords": [
+        "debt",
+        "leverage",
+        "financing",
+        "sofr",
+        "lbo",
+        "goldman"
+      ],
+      "from": "Goldman Sachs LevFin",
+      "subject": "Confidential: Debt Financing Terms — Project Blue Sky",
+      "date": "Oct 14, 2025",
+      "preview": "Term sheet attached for the Project Blue Sky leverage package. Spreads have widened to SOFR + 450bps due to credit market tightening. This impacts our LBO model returns by ~150bps...",
+      "avatarColor": "#a855f7"
+    },
+    {
+      "id": "email_5",
+      "keywords": [
+        "vertex",
+        "ai",
+        "markup",
+        "valuation",
+        "series b"
+      ],
+      "from": "Deal Team",
+      "subject": "Vertex AI — Series B Term Sheet Signed",
+      "date": "Oct 01, 2025",
+      "preview": "Great news. Vertex AI just closed their Series B led by Sequoia. Our stake is being marked up 140% from our entry valuation. This will significantly boost Fund III's Q3 IRR...",
+      "avatarColor": "#5b8def"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_1",
+      "keywords": [
+        "memo",
+        "investment",
+        "thesis",
+        "omnicorp",
+        "acquisition",
+        "ic"
+      ],
+      "title": "Project_Blue_Sky_IC_Memo.pdf",
+      "modified": "Oct 16, 2025",
+      "preview": "Investment Committee Memo. Target: OmniCorp. Ask: $150M Equity. Valuation: $1.2B (12x ARR). Strategic Rationale: Market consolidation play with CloudNexus synergies...",
+      "fileType": "pdf"
+    },
+    {
+      "id": "doc_2",
+      "keywords": [
+        "irr",
+        "performance",
+        "fund iii",
+        "valuation",
+        "excel",
+        "waterfall"
+      ],
+      "title": "Fund_III_Q3_Performance.xlsx",
+      "modified": "Oct 14, 2025",
+      "preview": "Fund III Net IRR: 22.4%. TVPI: 1.8x. DPI: 0.4x. Top Performers: Vertex AI, HealthBridge. Watchlist: StreamLine Retail (-12% markup)...",
+      "fileType": "xlsx"
+    },
+    {
+      "id": "doc_3",
+      "keywords": [
+        "diligence",
+        "kpmg",
+        "audit",
+        "tax",
+        "findings",
+        "red flag"
+      ],
+      "title": "Due_Diligence_Red_Flag_Report.docx",
+      "modified": "Oct 10, 2025",
+      "preview": "KPMG Financial & Tax Due Diligence. Exec Summary: No material accounting irregularities found. Adjusted EBITDA for FY24 is $98M. IT audit pending...",
+      "fileType": "docx"
+    },
+    {
+      "id": "doc_4",
+      "keywords": [
+        "macro",
+        "inflation",
+        "rates",
+        "outlook",
+        "market",
+        "goldman"
+      ],
+      "title": "Global_Macro_Outlook_Q4.pptx",
+      "modified": "Oct 01, 2025",
+      "preview": "Soft Landing vs Recession. Base case: fed cuts rates by 25bps in Q4. Inflation stabilizing at 2.8%. Geopolitical risks remain elevated...",
+      "fileType": "pptx"
+    }
+  ],
+  "calendar": [
+    {
+      "id": "cal_1",
+      "keywords": [
+        "ic",
+        "committee",
+        "review",
+        "fund iii",
+        "investment"
+      ],
+      "title": "Investment Committee Review",
+      "time": "2:00 PM - 4:00 PM",
+      "date": "Today",
+      "attendees": [
+        "Evelyn St. James",
+        "Rajiv Mehta",
+        "Julian Thorne"
+      ]
+    },
+    {
+      "id": "cal_2",
+      "keywords": [
+        "vertex",
+        "ai",
+        "board",
+        "meeting"
+      ],
+      "title": "Vertex AI Board Meeting",
+      "time": "10:00 AM - 12:00 PM",
+      "date": "Tomorrow",
+      "attendees": [
+        "Alex Chen",
+        "Vertex CEO"
+      ]
+    },
+    {
+      "id": "cal_3",
+      "keywords": [
+        "omnicorp",
+        "negotiation",
+        "pricing",
+        "deal"
+      ],
+      "title": "Project Blue Sky - Final Negotiation",
+      "time": "1:00 PM - 2:00 PM",
+      "date": "Friday",
+      "attendees": [
+        "Alex Chen",
+        "OmniCorp CEO",
+        "Legal Team"
+      ]
+    }
+  ],
+  "slack": [
+    {
+      "id": "slack_1",
+      "keywords": [
+        "lbo",
+        "model",
+        "irr",
+        "rates",
+        "synergy"
+      ],
+      "channel": "#deal-blue-sky",
+      "from": "Analyst Team",
+      "message": "Updated the LBO model with the SOFR + 450bps financing terms. IRR drops to 19.5% in the base case, but rises to 23% if we include the CloudNexus synergies.",
+      "time": "1 hour ago"
+    },
+    {
+      "id": "slack_2",
+      "keywords": [
+        "vertex",
+        "exit",
+        "ipo",
+        "secondary"
+      ],
+      "channel": "#investment-committee",
+      "from": "Evelyn St. James",
+      "message": "Agenda for Monday is locked. We are doing a deep dive on Vertex AI's exit options. I want to see a comp analysis for a potential IPO vs Secondary Sale.",
+      "time": "3 hours ago"
+    },
+    {
+      "id": "slack_3",
+      "keywords": [
+        "lp",
+        "distro",
+        "capital",
+        "call"
+      ],
+      "channel": "#client-relations",
+      "from": "Julian Thorne",
+      "message": "Just got off the phone with the Endowment. They are happy with the Vertex markup but want clarity on when we expect the next capital call.",
+      "time": "Yesterday"
+    }
+  ]
+}

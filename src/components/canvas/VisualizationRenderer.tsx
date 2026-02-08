@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
     BarChart,
     Bar,
@@ -19,6 +19,7 @@ import {
     Legend
 } from 'recharts';
 import type { VisualizationCard } from '@/lib/types';
+import { MermaidChart } from './MermaidChart';
 
 interface VisualizationRendererProps {
     card: VisualizationCard;
@@ -29,6 +30,30 @@ const DEFAULT_COLORS = ['#3B82F6', '#8B5CF6', '#F59E0B', '#10B981', '#EF4444', '
 
 export function VisualizationRenderer({ card, className = '' }: VisualizationRendererProps) {
     const colors = card.chartConfig?.colors || DEFAULT_COLORS;
+
+    // Check if this card has Mermaid data from WebSocket
+    const mermaidCode = card.data?.mermaidCode as string | undefined;
+    const mermaidNarration = card.data?.narration as string | undefined;
+
+    // If we have mermaid code, render MermaidChart
+    if (mermaidCode) {
+        return (
+            <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.5, ease: 'easeOut' }}
+                className={`w-full h-full flex flex-col items-center justify-center p-4 ${className}`}
+            >
+                <MermaidChart
+                    code={mermaidCode}
+                    title={card.headline}
+                    narration={mermaidNarration}
+                    className="max-w-3xl w-full"
+                />
+            </motion.div>
+        );
+    }
 
     // Transform data for Recharts
     const chartData = transformData(card);
@@ -281,3 +306,4 @@ function renderChart(
             );
     }
 }
+

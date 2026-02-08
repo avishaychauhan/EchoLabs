@@ -54,7 +54,7 @@ export default async function AppLayout({
                 </div>
 
                 {/* Nav */}
-                <nav className="flex-1 p-4 space-y-2">
+                <nav className="p-4 space-y-2">
                     <Link
                         href="/dashboard"
                         className="flex items-center gap-3 px-4 py-3 rounded-xl text-[var(--foreground-muted)] hover:bg-[var(--glass-bg)] hover:text-[var(--foreground)] transition-colors"
@@ -70,6 +70,9 @@ export default async function AppLayout({
                         New Session
                     </Link>
                 </nav>
+
+                {/* Sidebar Portal for Session Highlights */}
+                <div id="sidebar-portal" className="flex-1 overflow-y-auto min-h-0 px-4 pb-4 space-y-4 no-scrollbar" />
 
                 {/* User */}
                 <div className="p-4 border-t border-[var(--glass-border)]">

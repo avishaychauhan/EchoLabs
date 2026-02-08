@@ -1,0 +1,496 @@
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770554950055,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770554950010,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770554950014,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770554949900,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770554950077,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770554950177,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:15","message":"Next.js app prepared","data":{},"timestamp":1770554952084,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:26","message":"initWebSocketServer called","data":{"wssExists":false},"timestamp":1770554952085,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:33","message":"WebSocketServer created","data":{},"timestamp":1770554952086,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:23","message":"WebSocket server initialized","data":{},"timestamp":1770554952086,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:25","message":"Server listening","data":{"port":3000},"timestamp":1770554952092,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770554951046,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770554993087,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555070893,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555095999,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:15","message":"Next.js app prepared","data":{},"timestamp":1770555097621,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:26","message":"initWebSocketServer called","data":{"wssExists":false},"timestamp":1770555097622,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:33","message":"WebSocketServer created","data":{},"timestamp":1770555097623,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:23","message":"WebSocket server initialized","data":{},"timestamp":1770555097623,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555137612,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:15","message":"Next.js app prepared","data":{},"timestamp":1770555139031,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:26","message":"initWebSocketServer called","data":{"wssExists":false},"timestamp":1770555139032,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:33","message":"WebSocketServer created","data":{},"timestamp":1770555139032,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:23","message":"WebSocket server initialized","data":{},"timestamp":1770555139032,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:25","message":"Server listening","data":{"port":3000},"timestamp":1770555139034,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=7WUa4MZ_dw-RUgeGQhDYs","host":"localhost:3000"},"timestamp":1770555196229,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555196231,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=bf2OI1gBBVA269SvhfV9c","host":"localhost:3000"},"timestamp":1770555216381,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555216385,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555222675,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555222677,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555222679,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555222692,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555222695,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555222698,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555222723,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555222725,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555222726,"runId":"run1","hypothesisId":"E"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555249269,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555249278,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555249281,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555250930,"runId":"run1","hypothesisId":"C"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555253373,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555253388,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555253391,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555253396,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555253396,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555253396,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555265676,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555265677,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555265678,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555265689,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555265690,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555265690,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555265712,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555265713,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555265713,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=nG2pWzTJj8lVo4_vW0-JU","host":"localhost:3000"},"timestamp":1770555526677,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555526679,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555527047,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555527047,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555527048,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555527061,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555527062,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555527062,"runId":"run1","hypothesisId":"E"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555530973,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:15","message":"Next.js app prepared","data":{},"timestamp":1770555532296,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:26","message":"initWebSocketServer called","data":{"wssExists":false},"timestamp":1770555532297,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:33","message":"WebSocketServer created","data":{},"timestamp":1770555532297,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:23","message":"WebSocket server initialized","data":{},"timestamp":1770555532298,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:25","message":"Server listening","data":{"port":3000},"timestamp":1770555532299,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555532724,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555532724,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555532726,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555532728,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555532729,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555532729,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555532738,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555532743,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555532745,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555532753,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555532755,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555532759,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=7WUa4MZ_dw-RUgeGQhDYs","host":"localhost:3000"},"timestamp":1770555533712,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555533713,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=nG2pWzTJj8lVo4_vW0-JU","host":"localhost:3000"},"timestamp":1770555533719,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555533719,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=9efzJuYPUaPiAGNdVAE6q","host":"localhost:3000"},"timestamp":1770555554166,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555554168,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=bFpwBC6r52nsaFPjCabCU","host":"localhost:3000"},"timestamp":1770555568099,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555568101,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555572695,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555572697,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555572700,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555572704,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555572712,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555572713,"runId":"run1","hypothesisId":"E"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555589004,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555589007,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555589008,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555589361,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555589385,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555589386,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555589386,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555589899,"runId":"run1","hypothesisId":"C"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555592638,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555592641,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555592649,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555592653,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555592653,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555592653,"runId":"run1","hypothesisId":"E"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555593348,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555593350,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555593351,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555593505,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555603847,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555603849,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555603850,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555604148,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555611615,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555611617,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555611617,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555611868,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555614868,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555614870,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555614870,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555615059,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555618496,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555618498,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555618498,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555618663,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555622722,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555622724,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555622725,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555622965,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555625342,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555625343,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555625343,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555625506,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555635833,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555635835,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555635835,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555636072,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555640668,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555640670,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555640670,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555641262,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555644628,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555644634,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555644634,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555644843,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555649643,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555649645,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555649645,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555649942,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555650219,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555650221,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555650221,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555650480,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555655358,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555655361,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555655364,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555655591,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555661419,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555661421,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555661421,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555661661,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555675448,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555675450,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555675450,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555675733,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555677858,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555677862,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555677863,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555678029,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555684763,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555684767,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555684768,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555685064,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555688686,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555688688,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555688692,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555688871,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555691661,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555691663,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555691663,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555691886,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555695849,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555695852,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555695852,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555696180,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770555700711,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770555700712,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770555700713,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770555700955,"runId":"run1","hypothesisId":"C"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=7WUa4MZ_dw-RUgeGQhDYs","host":"localhost:3000"},"timestamp":1770555774745,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555774755,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=z9OGUhj8gJqGdL4MwgfW7","host":"localhost:3000"},"timestamp":1770555775158,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555775158,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555775310,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555775311,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555775312,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555775442,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555775443,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555775443,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=nG2pWzTJj8lVo4_vW0-JU","host":"localhost:3000"},"timestamp":1770555775728,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555775729,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=Ume6If95wEEXJN5om26mh","host":"localhost:3000"},"timestamp":1770555776058,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555776058,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555776229,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555776229,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555776230,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555776242,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555776243,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555776243,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555784162,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555784169,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555784171,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555784187,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555784188,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555784188,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555784322,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555784324,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555784326,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555785186,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555785189,"runId":"run1","hypothesisId":"E"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555786277,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555786278,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555789071,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:15","message":"Next.js app prepared","data":{},"timestamp":1770555790596,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:26","message":"initWebSocketServer called","data":{"wssExists":false},"timestamp":1770555790600,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:33","message":"WebSocketServer created","data":{},"timestamp":1770555790601,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:23","message":"WebSocket server initialized","data":{},"timestamp":1770555790602,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:25","message":"Server listening","data":{"port":3000},"timestamp":1770555790608,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=9efzJuYPUaPiAGNdVAE6q","host":"localhost:3000"},"timestamp":1770555790661,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555790662,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=Ume6If95wEEXJN5om26mh","host":"localhost:3000"},"timestamp":1770555790743,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555790754,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=z9OGUhj8gJqGdL4MwgfW7","host":"localhost:3000"},"timestamp":1770555791035,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555791114,"runId":"run1","hypothesisId":"B"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555789003,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555788852,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555789242,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555789180,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555789071,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555789194,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555789431,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555793049,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555793052,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555793056,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555793069,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555793072,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555793072,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=qqgFA4CClk21EI6pwDvP6","host":"localhost:3000"},"timestamp":1770555798197,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555798199,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555798715,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555798716,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555798711,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555798712,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555798713,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555798716,"runId":"run1","hypothesisId":"E"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555834552,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555847052,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555904476,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555938167,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555938184,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555938190,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555938209,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555938210,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555938211,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555940227,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555940228,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555940229,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555940238,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555940238,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555940239,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555948992,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555948994,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555948995,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555948999,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555949000,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555949003,"runId":"run1","hypothesisId":"E"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555974250,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555975470,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:15","message":"Next.js app prepared","data":{},"timestamp":1770555977377,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:26","message":"initWebSocketServer called","data":{"wssExists":false},"timestamp":1770555977381,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:33","message":"WebSocketServer created","data":{},"timestamp":1770555977381,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:23","message":"WebSocket server initialized","data":{},"timestamp":1770555977382,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:25","message":"Server listening","data":{"port":3000},"timestamp":1770555977388,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555974890,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=Ume6If95wEEXJN5om26mh","host":"localhost:3000"},"timestamp":1770555977751,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555977752,"runId":"run1","hypothesisId":"B"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555975460,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555978043,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555978043,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555978045,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555978075,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555978076,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555978076,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555978114,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555978114,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555978117,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555978135,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555978137,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555978137,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770555978200,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770555978200,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770555978201,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770555978203,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770555978203,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770555978204,"runId":"run1","hypothesisId":"E"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555975440,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=qqgFA4CClk21EI6pwDvP6","host":"localhost:3000"},"timestamp":1770555978266,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555978267,"runId":"run1","hypothesisId":"B"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555975430,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555975506,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555975467,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555975290,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555975574,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555975617,"runId":"run1","hypothesisId":"A"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770555975579,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=9efzJuYPUaPiAGNdVAE6q","host":"localhost:3000"},"timestamp":1770555980959,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555980963,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=z9OGUhj8gJqGdL4MwgfW7","host":"localhost:3000"},"timestamp":1770555981365,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770555981366,"runId":"run1","hypothesisId":"B"}
+{"location":"server.ts:10","message":"Server main started","data":{"dev":true,"hostname":"localhost","port":3000},"timestamp":1770556047034,"runId":"run1","hypothesisId":"A"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556080471,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556080474,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556080481,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=hVG3M7oA64Lnj6u88XR5G","host":"localhost:3000"},"timestamp":1770556080494,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770556080495,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770556080536,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770556080537,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770556080537,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556085142,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556085144,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556085145,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770556085147,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770556085148,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770556085149,"runId":"run1","hypothesisId":"E"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556098830,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556098831,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556098832,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556099556,"runId":"run1","hypothesisId":"C"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556102291,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556102293,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556102295,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770556102298,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770556102298,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770556102298,"runId":"run1","hypothesisId":"E"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556103478,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556103480,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556103481,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556103723,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556137625,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556137628,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556137628,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556138053,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556193186,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556193193,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556193193,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556193480,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556197901,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556197904,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556197904,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556198148,"runId":"run1","hypothesisId":"C"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=Ume6If95wEEXJN5om26mh","host":"localhost:3000"},"timestamp":1770556219735,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770556219740,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=QkaiB4nNc-oAPWadaWKOB","host":"localhost:3000"},"timestamp":1770556220571,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770556220571,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556221073,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556221086,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556221099,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770556221124,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770556221126,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770556221128,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=dkv4MAEnXoOIgGs73p5oZ","host":"localhost:3000"},"timestamp":1770556221129,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770556221130,"runId":"run1","hypothesisId":"B"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556223174,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556223177,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556223182,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556223546,"runId":"run1","hypothesisId":"C"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=z9OGUhj8gJqGdL4MwgfW7","host":"localhost:3000"},"timestamp":1770556226100,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770556226103,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=9efzJuYPUaPiAGNdVAE6q","host":"localhost:3000"},"timestamp":1770556226213,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770556226214,"runId":"run1","hypothesisId":"B"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556226461,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556226463,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556226463,"runId":"run1","hypothesisId":"C"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=jSMyyewKQuzKIIapZpkck","host":"localhost:3000"},"timestamp":1770556226483,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770556226484,"runId":"run1","hypothesisId":"B"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556226735,"runId":"run1","hypothesisId":"C"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556226746,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556226746,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556226747,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770556226749,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770556226750,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770556226750,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=HQBVFcZdd90iixHlETkBj","host":"localhost:3000"},"timestamp":1770556226964,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770556226965,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=rfbTlwOahv08s9JR1ln9X","host":"localhost:3000"},"timestamp":1770556241893,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770556241893,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=-W3IFCYbPvtS47DBsnM_-","host":"localhost:3000"},"timestamp":1770556248054,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770556248056,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556248488,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556248496,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556248497,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770556248554,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770556248555,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770556248569,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556250882,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556250910,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556250920,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556250955,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556250960,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556250963,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556250985,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556250986,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556250986,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770556250988,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770556250989,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770556250989,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556250996,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556250997,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556250998,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556251005,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556251005,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556251006,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770556251010,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770556251013,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770556251014,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556251028,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556251029,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556251030,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770556251089,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770556251090,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770556251091,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/_next/webpack-hmr?id=ncYNuBqrR4KhiOCxOBIKQ","host":"localhost:3000"},"timestamp":1770556259348,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/_next/webpack-hmr"},"timestamp":1770556259357,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556262927,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556262929,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556262929,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:61","message":"WebSocket upgrade request","data":{"url":"/ws","host":"localhost:3000"},"timestamp":1770556262942,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:64","message":"URL parsed successfully","data":{"pathname":"/ws"},"timestamp":1770556262944,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:68","message":"WebSocket upgrade successful","data":{"readyState":1},"timestamp":1770556262944,"runId":"run1","hypothesisId":"B"}
+{"location":"ws-server.ts:38","message":"WebSocket message received","data":{"rawLength":80},"timestamp":1770556263101,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:40","message":"Message parsed","data":{"parsed":true,"event":"session:start"},"timestamp":1770556263107,"runId":"run1","hypothesisId":"E"}
+{"location":"ws-server.ts:46","message":"Session ID set","data":{"sessionId":"1"},"timestamp":1770556263107,"runId":"run1","hypothesisId":"E"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556285150,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556285166,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556285169,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556285551,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556290130,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556290132,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556290136,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556290628,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556297635,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556297638,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556297638,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556297976,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556299683,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556299685,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556299686,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556299879,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556303387,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556303390,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556303391,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556303561,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556306057,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556306059,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556306060,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556306236,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556310857,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556310860,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556310861,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556311191,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556314212,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556314213,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556314214,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556314376,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556316585,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556316587,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556316588,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556317076,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556318671,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556318673,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556318674,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556318942,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556324111,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556324113,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556324116,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556324378,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:14","message":"Orchestrator POST called","data":{},"timestamp":1770556328281,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:18","message":"Request body parsed","data":{"hasText":true,"hasSessionId":true},"timestamp":1770556328282,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:19","message":"Schema validation result","data":{"success":true},"timestamp":1770556328282,"runId":"run1","hypothesisId":"C"}
+{"location":"orchestrator/route.ts:43","message":"Orchestrator success","data":{"hasResult":true},"timestamp":1770556328523,"runId":"run1","hypothesisId":"C"}

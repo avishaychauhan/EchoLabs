@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import {
     Mic,
@@ -14,12 +14,15 @@ import {
     ChevronUp,
     Radio,
     Trash2,
-    AlertCircle
+    AlertCircle,
+    Wifi,
+    WifiOff
 } from 'lucide-react';
 import { Canvas } from '@/components/canvas';
 import { LiveSummary, TranscriptFeed } from '@/components/sidebar';
 import { useTranscription } from '@/hooks/useTranscription';
 import { useLiveSummary } from '@/hooks/useLiveSummary';
+import { useEchoLensWs } from '@/hooks/useEchoLensWs';
 import { useTranscriptStore } from '@/lib/stores/transcript-store';
 import { useVisualizationStore } from '@/lib/stores/visualization-store';
 import { useAuraStore } from '@/lib/stores/aura-store';
@@ -33,10 +36,14 @@ export function PresenterView({ sessionId, sessionTitle = 'Presentation' }: Pres
     const [isTranscriptExpanded, setIsTranscriptExpanded] = useState(true);
     const [isPaused, setIsPaused] = useState(false);
     const [showCopied, setShowCopied] = useState(false);
+    const lastOrchestratorCallRef = useRef<number>(0);
 
     const { fullTranscript, isListening, clear: clearTranscriptStore } = useTranscriptStore();
-    const { currentCard, dismissCard, clear: clearVisualizations } = useVisualizationStore();
+    const { currentCard, dismissCard, clear: clearVisualizations, agentStatuses } = useVisualizationStore();
     const { state: auraState } = useAuraStore();
+
+    // Connect to WebSocket server for real-time updates
+    const { isConnected } = useEchoLensWs({ sessionId });
 
     // Set up live summary generation
     const { generateSummary, reset: resetSummary, isGenerating } = useLiveSummary({
@@ -46,9 +53,28 @@ export function PresenterView({ sessionId, sessionTitle = 'Presentation' }: Pres
 
     // Set up transcription
     const { startTranscription, stopTranscription, clearTranscript, isSupported } = useTranscription({
-        onTranscript: (text, isFinal) => {
-            if (isFinal && !isPaused) {
-                console.log('Final transcript:', text);
+        onTranscript: async (text, isFinal) => {
+            if (isFinal && !isPaused && text.length > 15) {
+                console.log('Final transcript, sending to orchestrator:', text);
+                // Minimal throttle (800ms) for near-instant response
+                const now = Date.now();
+                if (now - lastOrchestratorCallRef.current > 800) {
+                    lastOrchestratorCallRef.current = now;
+
+                    // Send to orchestrator - don't await to avoid blocking
+                    fetch('/api/orchestrator', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            text,
+                            timestamp: now,
+                            sessionId,
+                            context: fullTranscript,
+                        }),
+                    }).catch((error) => {
+                        console.error('Orchestrator call failed:', error);
+                    });
+                }
             }
         },
         onError: (error) => console.error('Transcription error:', error),
@@ -137,6 +163,18 @@ export function PresenterView({ sessionId, sessionTitle = 'Presentation' }: Pres
                             Generating summary...
                         </span>
                     )}
+                    {/* WebSocket Connection Status */}
+                    <span className={`flex items-center gap-2 px-3 py-1 rounded-full text-sm ${isConnected ? 'bg-green-500/20 text-green-400' : 'bg-gray-500/20 text-gray-400'
+                        }`}>
+                        {isConnected ? <Wifi className="w-4 h-4" /> : <WifiOff className="w-4 h-4" />}
+                        {isConnected ? 'Connected' : 'Offline'}
+                    </span>
+                    {/* Agent Processing Status */}
+                    {agentStatuses.orchestrator === 'processing' && (
+                        <span className="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm animate-pulse">
+                            Analyzing...
+                        </span>
+                    )}
                 </div>
                 <div className="flex items-center gap-2 relative">
                     <button
@@ -204,8 +242,8 @@ export function PresenterView({ sessionId, sessionTitle = 'Presentation' }: Pres
                     <button
                         onClick={handleToggleListening}
                         className={`flex items-center gap-2 px-8 py-4 rounded-2xl font-medium text-lg transition-all ${isListening
-                                ? 'bg-red-500 hover:bg-red-600 text-white shadow-lg shadow-red-500/25'
-                                : 'bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] text-white hover:opacity-90 shadow-lg shadow-blue-500/25'
+                            ? 'bg-red-500 hover:bg-red-600 text-white shadow-lg shadow-red-500/25'
+                            : 'bg-gradient-to-r from-[var(--accent-primary)] to-[var(--accent-secondary)] text-white hover:opacity-90 shadow-lg shadow-blue-500/25'
                             }`}
                     >
                         {isListening ? (
@@ -230,8 +268,8 @@ export function PresenterView({ sessionId, sessionTitle = 'Presentation' }: Pres
                     </button>
                     <div className="ml-4 px-4 py-2 rounded-xl glass text-sm flex items-center gap-2">
                         <span className={`w-2 h-2 rounded-full ${auraState === 'listening' ? 'bg-green-400 animate-pulse' :
-                                auraState === 'visualizing' ? 'bg-purple-400' :
-                                    'bg-gray-400'
+                            auraState === 'visualizing' ? 'bg-purple-400' :
+                                'bg-gray-400'
                             }`} />
                         <span className="text-[var(--foreground-muted)] capitalize">{auraState}</span>
                     </div>
