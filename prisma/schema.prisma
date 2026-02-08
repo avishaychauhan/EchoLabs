@@ -1,0 +1,69 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(cuid())
+  clerkId   String    @unique
+  email     String    @unique
+  name      String?
+  sessions  Session[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Session {
+  id          String         @id @default(cuid())
+  title       String
+  description String?
+  status      SessionStatus  @default(DRAFT)
+  userId      String
+  user        User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  files       UploadedFile[]
+  transcript  String?        @db.Text
+  cards       CardLog[]
+  audiencePin String?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+
+  @@index([userId])
+}
+
+enum SessionStatus {
+  DRAFT
+  LIVE
+  COMPLETED
+}
+
+model UploadedFile {
+  id           String   @id @default(cuid())
+  sessionId    String
+  session      Session  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  fileName     String
+  fileType     String
+  fileUrl      String
+  parsedData   Json?
+  summary      String?  @db.Text
+  createdAt    DateTime @default(now())
+
+  @@index([sessionId])
+}
+
+model CardLog {
+  id          String   @id @default(cuid())
+  sessionId   String
+  session     Session  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  cardType    String
+  headline    String
+  data        Json
+  morphHint   String?
+  triggeredBy String?  @db.Text
+  displayedAt DateTime @default(now())
+
+  @@index([sessionId])
+}
