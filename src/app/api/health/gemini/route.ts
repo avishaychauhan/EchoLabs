@@ -27,6 +27,19 @@ export async function GET() {
     });
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
+    const is429 =
+      message.includes('429') ||
+      message.includes('RESOURCE_EXHAUSTED') ||
+      message.includes('quota') ||
+      message.includes('rate');
+    if (is429) {
+      return NextResponse.json({
+        ok: true,
+        rateLimited: true,
+        message:
+          'Gemini API key is valid but quota exceeded. Check usage at https://ai.google.dev/gemini-api/docs/rate-limits',
+      });
+    }
     return NextResponse.json(
       { ok: false, error: 'Gemini API request failed', details: message },
       { status: 503 }

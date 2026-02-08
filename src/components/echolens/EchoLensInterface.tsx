@@ -22,6 +22,7 @@ import { useTranscriptStore } from '@/lib/stores/transcript-store';
 import { useAuraStore } from '@/lib/stores/aura-store';
 import { useEchoLensWs } from '@/hooks/useEchoLensWs';
 import { useTranscription } from '@/hooks/useTranscription';
+import { useDeepgram } from '@/hooks/useDeepgram';
 import { useLiveSummary } from '@/hooks/useLiveSummary';
 import { MermaidChart } from '@/components/canvas/MermaidChart';
 import { ReferenceCard } from '@/components/canvas/ReferenceCard';
@@ -54,11 +55,12 @@ export function EchoLensInterface({ sessionId }: { sessionId: string }) {
         summaries,
     } = useVisualizationStore();
 
-    const { chunks, fullTranscript, isListening: isStoreListening, setListening } = useTranscriptStore();
+    const { chunks, fullTranscript, isListening: isStoreListening, addChunk, updateChunk, setListening } = useTranscriptStore();
     const { state: auraState, setAudioLevel } = useAuraStore();
     const { isConnected } = useEchoLensWs({ sessionId });
     const { generateSummary, reset: resetSummary } = useLiveSummary({ minWords: 15, debounceMs: 3000 });
     const [portalTarget, setPortalTarget] = useState<HTMLElement | null>(null);
+    const interimChunkIdRef = useRef<string | null>(null);
     const sweepTimerRef = useRef<NodeJS.Timeout | null>(null);
     const lastSweepLengthRef = useRef(0);
 
@@ -105,11 +107,58 @@ export function EchoLensInterface({ sessionId }: { sessionId: string }) {
     // Determine if we have active visualizations
     const hasVisualizations = charts.length > 0 || references.length > 0;
 
-    // Speech-to-text via Web Speech API (no external APIs required)
-    const { startTranscription, stopTranscription, isListening, isSupported } = useTranscription({
-        onTranscript: (text: string, isFinal: boolean) => {
-            if (isFinal && text.length > 10) {
-                const context = useTranscriptStore.getState().fullTranscript;
+    // Set up Deepgram transcription
+    const { start: startDeepgram, stop: stopDeepgram, isRecording: isDeepgramRecording } = useDeepgram({
+        onTranscript: async (text: string, isFinal: boolean) => {
+            if (isFinal) {
+                if (interimChunkIdRef.current) {
+                    updateChunk(interimChunkIdRef.current, text, true);
+                    interimChunkIdRef.current = null;
+                } else {
+                    addChunk({
+                        id: crypto.randomUUID(),
+                        text,
+                        isFinal: true,
+                        timestamp: Date.now(),
+                    });
+                }
+                if (text.length > 10) {
+                    const context = useTranscriptStore.getState().fullTranscript;
+                    fetch('/api/orchestrator', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            text,
+                            timestamp: Date.now(),
+                            sessionId,
+                            context,
+                        }),
+                    }).catch(console.error);
+                }
+            } else {
+                if (interimChunkIdRef.current) {
+                    updateChunk(interimChunkIdRef.current, text, false);
+                } else {
+                    const id = crypto.randomUUID();
+                    interimChunkIdRef.current = id;
+                    addChunk({ id, text, isFinal: false, timestamp: Date.now() });
+                }
+            }
+        },
+        onError: (err) => {
+            console.error('[Deepgram]', err);
+            // Fallback to Web Speech API if Deepgram fails asynchronously
+            if (!isWebSpeechListening && isSupported) {
+                console.warn('[Deepgram] Error detected, falling back to Web Speech API');
+                startTranscription();
+            }
+        },
+    });
+
+    // Fallback Web Speech API (for seamless experience if Deepgram key is missing)
+    const { startTranscription, stopTranscription, isListening: isWebSpeechListening, isSupported } = useTranscription({
+        onTranscript: async (text: string, isFinal: boolean) => {
+            if (isFinal && text.length > 15) {
                 fetch('/api/orchestrator', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -117,13 +166,15 @@ export function EchoLensInterface({ sessionId }: { sessionId: string }) {
                         text,
                         timestamp: Date.now(),
                         sessionId,
-                        context,
+                        context: fullTranscript,
                     }),
                 }).catch(console.error);
             }
         },
-        onError: (e) => console.warn('[Speech]', e),
+        onError: (e) => console.warn('[WebSpeech]', e),
     });
+
+    const isListening = isDeepgramRecording || isWebSpeechListening;
 
     // Compute stats
     const stats = useMemo(() => {
@@ -145,6 +196,7 @@ export function EchoLensInterface({ sessionId }: { sessionId: string }) {
     const handleToggleRecording = async () => {
         if (isListening) {
             setListening(false);
+            stopDeepgram();
             stopTranscription();
             resetSummary();
             if (sweepTimerRef.current) {
@@ -153,9 +205,16 @@ export function EchoLensInterface({ sessionId }: { sessionId: string }) {
             }
         } else {
             lastSweepLengthRef.current = 0;
-            if (isSupported) {
-                startTranscription();
+            // Try Deepgram first
+            try {
+                await startDeepgram();
                 setListening(true);
+            } catch (e) {
+                console.warn('Deepgram failed to start, falling back to Web Speech', e);
+                if (isSupported) {
+                    startTranscription();
+                    setListening(true);
+                }
             }
         }
     };

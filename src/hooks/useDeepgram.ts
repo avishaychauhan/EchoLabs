@@ -38,9 +38,10 @@ export function useDeepgram({ onTranscript, onError }: UseDeepgramOptions): UseD
     try {
       // Get temporary token from our server
       const tokenRes = await fetch('/api/deepgram/token');
-      const { token } = await tokenRes.json();
-      if (!token) {
-        const err = 'No Deepgram token available';
+      const data = await tokenRes.json().catch(() => ({}));
+      const token = data?.token;
+      if (!tokenRes.ok || !token) {
+        const err = data?.error || 'No Deepgram token available';
         onError?.(err);
         throw new Error(err);
       }
