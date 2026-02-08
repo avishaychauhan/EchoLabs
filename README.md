@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### Real-time insights (WebSocket)
 
-For live transcription, charts, and AI insights in the presenter view, use **`npm run dev`** (custom server with WebSocket). Do not use `npm run dev:next` or `next dev` alone—those do not start the WebSocket server, so the client cannot connect and you may see `[WS] Connection error` in the console.
+For live transcription, charts, and AI insights in the presenter view, use **`npm run dev`** (custom server with WebSocket). Do not run `next dev` alone—it does not start the WebSocket server, so the client cannot connect and you may see `[WS] Connection error` in the console.
 
 When the custom server starts correctly you should see:
 
