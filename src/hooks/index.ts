@@ -1,2 +1,2 @@
 export { useTranscription } from './useTranscription';
-export { useGeminiStream } from './useGeminiStream';
+export { useLiveSummary } from './useLiveSummary';
